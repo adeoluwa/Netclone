@@ -24,13 +24,13 @@ const Movie = ({ item }) => {
       setLike(!like);
       setSaved(true);
       /* Updating the database with the movie the user saved. */
-      await ( saved, updateDoc(movieID, {
+      await updateDoc(movieID, {
         savedShows: arrayUnion({
           id: item.id,
           title: item.title || item.name,
           img: item.backdrop_path,
         }),
-      }));
+      });
     } else {
       alert('Please log in to save a movie');
     }

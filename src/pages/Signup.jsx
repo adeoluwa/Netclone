@@ -9,7 +9,7 @@ const Signup = () => {
 
   const [password, setPassword] = useState('');
 
-  const { signUp } = UserAuth();
+  const {user, signUp } = UserAuth();
   // removed user because the value was not used
 
   const navigate = useNavigate();

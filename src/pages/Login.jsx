@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState();
   const [error, setError] = useState();
 
-  const {  logIn } = UserAuth(); 
+  const { user, logIn } = UserAuth(); 
   // removed user, because the value was never used
 
   const navigate = useNavigate();
