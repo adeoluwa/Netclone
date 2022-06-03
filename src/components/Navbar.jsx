@@ -7,7 +7,7 @@ import { UserAuth } from '../context/AuthContext';
 const Navbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
-  // console.log(user);
+  
 
   /**
    * The handleLogout function is an asynchronous function that calls the logOut function and then
